@@ -20,6 +20,7 @@ class ApiService {
         final instance = WebtoonModel.fromJson(webtoon);
         webtoonInstances.add(instance);
       }
+      webtoonInstances.shuffle();
       return webtoonInstances;
     }
     throw Error();
